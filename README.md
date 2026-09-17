@@ -41,7 +41,6 @@ Managing an organizational AI training curriculum manually every month creates b
 
 ---
 
-```markdown
 ## System Architecture
 
 ```text
@@ -81,6 +80,7 @@ Managing an organizational AI training curriculum manually every month creates b
 │         • Formatted clickable hyperlinks                    │
 └─────────────────────────────────────────────────────────────┘
 
+```
 
 ## How It Works
 

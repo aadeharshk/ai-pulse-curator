@@ -41,42 +41,45 @@ Managing an organizational AI training curriculum manually every month creates b
 
 ---
 
+```markdown
 ## System Architecture
-+----------------------------------------------------------------------------------------+
-                |          Historical Training.xlsx          |
-                |   (Existing Topics, Schema, Last Sr No)    |
-                +---------------------+----------------------+
-                                      |
-                                      v
-+----------------------------------------------------------------------------------------+
-| STAGE 1: step1_trend_analyzer.py                                                       |
-|                                                                                        |
-|  [YouTube API v3] ---> [NLP Tokenizer] ---> [Engagement Weighting Engine]              |
-|                                                      |                                 |
-|                                                      v                                 |
-|                                            booming_trends.json                         |
-|                                            - Booming Keywords                          |
-|                                            - Booming Hashtags                          |
-|                                            - Booming Topics (Previous vs Emerging)     |
-+-----------------------------------------+----------------------------------------------+
-                                      |
-                                      v
-+----------------------------------------------------------------------------------------+
-| STAGE 2: step2_video_curator.py                                                        |
-|                                                                                        |
-|  [Booming Topics] ---> [Targeted Deep Search] ---> [Quality & Engagement Scoring]      |
-|                                                              |                         |
-|                                                              v                         |
-|                                                 [Pandas & OpenPyXL Appender]           |
-+-----------------------------------------+----------------------------------------------+
-                                      |
-                                      v
-                +--------------------------------------------+
-                |          Updated Training.xlsx             |
-                |    - Continuous sequential Sr No           |
-                |    - Chronological incrementing dates      |
-                |    - Formatted clickable hyperlinks        |
-                +--------------------------------------------+
+
+```text
+┌─────────────────────────────────────────────────────────────┐
+│                 Historical Training.xlsx                    │
+│           (Existing Topics, Schema, Last Sr No)             │
+└──────────────────────────────┬──────────────────────────────┘
+                               │
+                               ▼
+┌─────────────────────────────────────────────────────────────┐
+│ STAGE 1: step1_trend_analyzer.py                            │
+│                                                             │
+│  [YouTube API v3] ──► [NLP Tokenizer] ──► [Weighting Engine]│
+│                                                   │         │
+│                                                   ▼         │
+│                                       booming_trends.json   │
+│                                       • Booming Keywords    │
+│                                       • Booming Hashtags    │
+│                                       • Booming Topics      │
+└──────────────────────────────┬──────────────────────────────┘
+                               │
+                               ▼
+┌─────────────────────────────────────────────────────────────┐
+│ STAGE 2: step2_video_curator.py                             │
+│                                                             │
+│  [Booming Topics] ──► [Deep Search] ──► [Scoring Algorithm] │
+│                                                   │         │
+│                                                   ▼         │
+│                                      [Excel Data Appender]  │
+└──────────────────────────────┬──────────────────────────────┘
+                               │
+                               ▼
+┌─────────────────────────────────────────────────────────────┐
+│                   Updated Training.xlsx                     │
+│         • Continuous sequential Sr No                       │
+│         • Chronological incrementing dates                  │
+│         • Formatted clickable hyperlinks                    │
+└─────────────────────────────────────────────────────────────┘
 
 
 ## How It Works

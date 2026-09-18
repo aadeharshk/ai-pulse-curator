@@ -13,6 +13,12 @@ from typing import List, Dict, Any
 import openpyxl
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
+
 class VideoCurator:
     def __init__(self, api_key: str = ""):
         self.api_key = api_key

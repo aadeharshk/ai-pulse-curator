@@ -1,0 +1,45 @@
+{
+  "analysis_date": "2026-09-18",
+  "window_days": 14,
+  "booming_keywords": [
+    "cursor",
+    "artifacts",
+    "claude code",
+    "ai agents",
+    "notebooklm",
+    "n8n",
+    "prompting",
+    "copilot"
+  ],
+  "booming_hashtags": [
+    "#ai",
+    "#cursor",
+    "#chatgpt",
+    "#claude",
+    "#automation",
+    "#notebooklm"
+  ],
+  "booming_topics": [
+    {
+      "topic": "AI Coding & IDEs",
+      "type": "Emerging New Topic",
+      "video_count": 8,
+      "total_views": 1540000,
+      "momentum_score": 128.4
+    },
+    {
+      "topic": "Claude Basics",
+      "type": "Previous Topic",
+      "video_count": 6,
+      "total_views": 890000,
+      "momentum_score": 94.2
+    },
+    {
+      "topic": "AI Agents & Automation",
+      "type": "Emerging New Topic",
+      "video_count": 7,
+      "total_views": 1120000,
+      "momentum_score": 105.7
+    }
+  ]
+}

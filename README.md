@@ -118,4 +118,4 @@ ai-pulse-curator/
 ├── step1_trend_analyzer.py      # Stage 1: Detects booming keywords, tags & topics
 ├── step2_video_curator.py       # Stage 2: Ranks videos & syncs Training.xlsx
 ├── booming_trends.json          # Intermediate data handoff between Stage 1 and 2
-└── Training.xlsx                # Master organizational training spreadsheet
+└── Training.xlsx                # Master training sheet (Auto-generated on first run or user-provided)

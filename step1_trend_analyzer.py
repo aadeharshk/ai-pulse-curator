@@ -14,6 +14,12 @@ from collections import Counter, defaultdict
 from typing import List, Dict, Any
 import pandas as pd
 
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
+
 STOPWORDS = {
     "a", "about", "above", "after", "again", "against", "all", "am", "an", "and", "any", "are",
     "as", "at", "be", "because", "been", "before", "being", "below", "between", "both", "but",

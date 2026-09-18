@@ -28,3 +28,6 @@ booming_trends.json
 # Operating system files
 .DS_Store
 Thumbs.db
+
+*.xlsx
+booming_trends.json
